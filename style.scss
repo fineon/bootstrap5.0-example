@@ -1,0 +1,35 @@
+.navbar{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    &-brand{
+        color: white !important;
+    }
+}
+
+.navbar-nav{
+    li{
+        
+        a{
+            color: white !important;
+            font-weight: 600;
+        }
+    }
+}
+
+.header{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: white;
+    padding-top:5%;
+}
+
+.services{
+    padding: 80px 0;
+    &-img{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+.carouselTest{
+    width: 50%;
+}
