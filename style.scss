@@ -138,6 +138,20 @@
     background-image: linear-gradient(to right, #a517ba, #5f1782);
     color: white;
     padding: 32px;
+
+    .col-md-4{
+        .fas{
+            margin-right: 8px;
+            font-size: 25px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 2px;
+            background-image: linear-gradient(to right, #a517ba, #5f1782);
+        }
+    }
+
 }
 
 
