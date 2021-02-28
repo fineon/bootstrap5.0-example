@@ -94,6 +94,7 @@
 
 .testimonial {
     margin: 100px 0;
+    background-color: ghostwhite;
 
     &__heading{
         @extend .services__heading--withborder;
@@ -116,6 +117,27 @@
         margin: 0 10px;
         object-fit: fill;
     }
+}
+
+.social-media{
+    margin: 100px 0;
+
+    &__icons{
+        img{
+            width: 30%;
+            transition: 0.5s;
+
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+.footer{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: white;
+    padding: 32px;
 }
 
 

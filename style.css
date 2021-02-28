@@ -87,6 +87,7 @@
 
 .testimonial {
   margin: 100px 0;
+  background-color: ghostwhite;
 }
 
 .testimonial__quote {
@@ -106,6 +107,28 @@
   margin: 0 10px;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.social-media {
+  margin: 100px 0;
+}
+
+.social-media__icons img {
+  width: 30%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-media__icons img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#a517ba), to(#5f1782));
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  color: white;
+  padding: 32px;
 }
 
 .carouselTest {
