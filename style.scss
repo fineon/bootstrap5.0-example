@@ -19,13 +19,70 @@
     background-image: linear-gradient(to right, #a517ba, #5f1782);
     color: white;
     padding-top:5%;
+
+    &__bottom-shape{
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
+        padding: 2%;
+        
+    }
+}
+
+//for testing purpose, didn't work with Bootstrap 
+.clipped{
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    padding: 2%;
 }
 
 .services{
     padding: 80px 0;
+    
+    &__heading--withborder{
+        text-transform: uppercase;
+        margin: 32px 0;
+
+        //adding the divider below the heading text
+        &::before{
+            content: '';
+            background: #7b1798;
+            height: 5px;
+            width: 200px;
+            margin: auto;
+            display: block;
+            transform: translateY(50px);
+        }
+
+        //adding another small decor to the divider
+        &::after{
+            content: '';
+            background: #7b1798;
+            height: 10px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+            transform: translateY(4px);
+        }
+    }
+
     &-img{
         width: 100%;
         margin-top: 20px;
+    }
+
+    //chose to name classes for h2 only in services section since parent Bootstrap class selector could be too wide and may cause unwanted inheritence in other styling sections
+    &__title{
+        padding: 5px;
+        margin-top: 25px;
+        text-transform: capitalize;
+    }
+
+    .btn-primary{
+        box-shadow: none;
+        padding: 8px 25px;
+        border: none;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
     }
 }
 
