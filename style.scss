@@ -40,7 +40,7 @@
         text-transform: uppercase;
         margin: 32px 0;
 
-        //adding the divider below the heading text
+        //adding the divider below the heading text. Not that this doesn't translate well in mobile layout, or when the heading is not <h2>
         &::before{
             content: '';
             background: #7b1798;
