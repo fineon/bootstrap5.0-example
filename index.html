@@ -134,11 +134,11 @@
                         <li class="list-group-item">Here's a Bootstrap list, with active state provided via .active
                             class, disabled state via .disabled class and hover state provided via
                             .list-group-item-action class</li>
-                        <li class="list-group-item active">we good</li>
-                        <li class="list-group-item list-group-item-action">we better</li>
+                        <li class="list-group-item active">We're good at what we do</li>
+                        <li class="list-group-item list-group-item-action">we're dedicated</li>
                         <li class="list-group-item list-group-item-action list-group-item-danger">note that the below
                             list item is not hoverable due to .disabled</li>
-                        <li class="list-group-item list-group-item-action disabled">we cheap</li>
+                        <li class="list-group-item list-group-item-action disabled">we love sugared coffee</li>
                     </ul>
                     <hr>
                     <h5>here's an interactive list</h5>
@@ -183,7 +183,9 @@
                                 class="tab-pane fade show active" 
                                 id="list-home" 
                                 role="tabpanel"
-                                aria-labelledby="list-home-list">this is home</div>
+                                aria-labelledby="list-home-list">
+                                    <p class="alert alert-info">this is home. The reference is connected by an id for each list items, referenced by the a tag </p>
+                                </div>
                                 <div 
                                 class="tab-pane fade" 
                                 id="list-profile" 
@@ -200,27 +202,6 @@
                                 role="tabpanel"
                                 aria-labelledby="list-settings-list">this is settings</div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div role="tabpanel">
-                        <!-- List group -->
-                        <div class="list-group" id="myList" role="tablist">
-                            <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home"
-                                role="tab">Home</a>
-                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile"
-                                role="tab">Profile</a>
-                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages"
-                                role="tab">Messages</a>
-                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#settings"
-                                role="tab">Settings</a>
-                        </div>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="home" role="tabpanel">...</div>
-                            <div class="tab-pane" id="profile" role="tabpanel">...</div>
-                            <div class="tab-pane" id="messages" role="tabpanel">...</div>
-                            <div class="tab-pane" id="settings" role="tabpanel">...</div>
                         </div>
                     </div>
                 </div>
