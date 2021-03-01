@@ -16,3 +16,14 @@ var toastList = toastElList.map(function (toastEl) {
     })
 });
 
+//adding a shadow effect (also a Bootstrap class) on hover and leaving hover on Bootstrap cards
+let shadowHover = document.querySelectorAll('.card');
+shadowHover.forEach(item => {
+    item.addEventListener('mouseover',className => {
+        // className.classList.add('shadow')
+        item.classList.add('shadow');
+        item.addEventListener('mouseout',rmv =>{
+            item.classList.remove('shadow');
+        })
+    })
+})
