@@ -16,10 +16,17 @@ A project focused in using bootstrap for HTML, CSS and JS
     - ```.tablist``` + ```.tab-content``` links the nav + the content pane together
     - ```data-bs-toggle="list"``` should be used in ```.list-group-item``` .Both ```#id``` and ```a tag href="#id"``` are needed to enable tab navigation
 - Bootstrap tooltip is a fun way annotate info. Must install **popper.js** to have this function. But have to be initialized using Javascript. [Link](https://getbootstrap.com/docs/5.0/components/tooltips/)
-    - only need these HTML attributes to use it ```data-bs-toggle="tooltip"``` and ```title="put text here"```
+    - only need these HTML attributes to start using it ```data-bs-toggle="tooltip"``` and ```title="put text here"```
+- Modal: can be used via HTML attributes or Javascript
+    - ```data-bs-toggle="modal"``` on a parent element will reference ```data-bs-target="#foo"``` or ```a href="#foo"```
+    - ```data-bs-dismiss="modal"``` is used on a button to close a modal
+- Toast - a notification Bootstrap component that's handy to use 
+    - Must initialize through Javascript first -> target the div you wanna show, then use an ```addEventListener()``` method to target the button to fire Toast
+
 
 ## Some final thoughts
 - Bootstrap builds excellent preset styles and functionalities to build a website fast. Really excels in styling, ease of set up. I got mine up and running in an afternoon, with front-end ready to go. 
+- I notice a lot of emphasis on HTML attributes as a mean to insert Bootstrap styling and functions, though some functions needed to be initialized in Javascript before I could use a Bootstrap componennt (tooltip) -> So i prioritized using HTML attributes first before controlling Bootstrap through Javascript. All styling is done by SCSS for separation of concern. 
 - Some limitations 
     - I did have to wrestle with styling control for some of the pre-styled elements using ```!important```, which could be an issue for larger websites that manages hundreds of pages and elements. 
         - React.js with SASS or CSS Module could be better at handling the larger load, since they're modular and each components you create is reusable. There is a variation of Bootstrap built with Create React App, so i'm excited to try this out.
