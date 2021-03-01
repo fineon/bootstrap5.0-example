@@ -16,7 +16,3 @@ var toastList = toastElList.map(function (toastEl) {
     })
 });
 
-
-
-
-console.log(test)
