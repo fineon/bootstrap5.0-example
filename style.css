@@ -28,6 +28,10 @@
   padding-top: 5%;
 }
 
+.header p:last-child {
+  color: black;
+}
+
 .header__bottom-shape {
   background-image: -webkit-gradient(linear, left top, right top, from(#a517ba), to(#5f1782));
   background-image: linear-gradient(to right, #a517ba, #5f1782);

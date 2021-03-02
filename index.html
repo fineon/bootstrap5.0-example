@@ -75,22 +75,23 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores in natus commodi beatae dolorum
                         atque maiores illum, repellat provident! Quas impedit repellendus numquam facilis voluptatum
                         nihil architecto quae assumenda unde.</p>
-                        <!-- live toast  -->
-                        <button type="button" class="btn btn-warning" id="liveToastBtn">Notify Me</button>
+                    <!-- live toast  -->
+                    <button type="button" class="btn btn-warning" id="liveToastBtn">Notify Me</button>
 
-                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
-                            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                                <div class="toast-header">
-                                    <div class="badge bg-danger me-2">1</div>
-                                    <strong class="me-auto">Construction Co.</strong>
-                                    <small>11 mins ago</small>
-                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                </div>
-                                <div class="toast-body">
-                                    <p>hi there</p>
-                                </div>
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <div class="badge bg-danger me-2">1</div>
+                                <strong class="me-auto">Construction Co.</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                <p>hi there</p>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid" src="./assets/img2.jpg" alt="">
@@ -264,27 +265,27 @@
         </div>
     </section>
 
-    <div class="container">
-        <h2 class="text-center">Upcoming Events</h2>
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Upcoming Events</h2>
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card my-3">
                     <div class="card-header">
-                        <h2 class="card-title text-center">Launch Conf 2021 Is Here!</h2>
+                        <h2 class="card-title text-center my-3">Launch Conf 2021 Is Here!</h2>
                     </div>
-                    <div class="body">
-                        <h5 class="card-subtitle">Get your tickets now</h5>
+                    <div class="card-body">
+                        <img class="card-img-top" src="./assets/img1.jpg" alt="">
+                        <h5 class="card-subtitle my-3">Get your tickets now</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero ad
                             sequi aliquam nostrum minus? Nemo possimus dolorem sequi quidem exercitationem. Dolor
                             nesciunt expedita blanditiis perferendis provident nostrum. Minus, tenetur!</p>
-                        <div class="card-footer text-center">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                View Info
-                            </button>
-                        </div>
-
+                    </div>
+                    <div class="card-footer text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            View Info
+                        </button>
                     </div>
                 </div>
                 <!-- Modal -->
@@ -309,41 +310,70 @@
                 </div>
             </div>
             <div class="col">
-               <div class="card">
-                   <div class="body">
-                       <form action="" class="form">
-                           <h6 class="card-text">Sign Up Here</h6>
-                           <input 
-                           type="text" placeholder="Name">
-                           <button class="btn btn-primary">Sign Up</button>
-                       </form>
-                   </div>
-               </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title my-4">Sign Up Here</h3>
+                        <form class="form">
+                            <label for="name1" class="form-label">First Name</label>
+                            <input type="text" id="name1" class="form-control" placeholder="">
+
+                            <label for="name2" class="form-label">Last Name</label>
+                            <input type="text" id="name2" class="form-control" placeholder="">
+
+                            <div class="form-floating my-3">
+                                <input type="email" id="email1" class="form-control" placeholder="your_email">
+                               <label for="email1">
+                                   Email
+                               </label>
+                            </div>
+
+
+                            <label for="file1" class="form-label">Upload your picture here to create a profile</label>
+                            <input type="file" id="file1" class="form-control">
+
+                            <label for="email1" class="form-label">Username</label>
+
+                            <div class="input-group flex-nowrap">
+                                
+                                <input type="text" id="email1" class="form-control" placeholder="you_username">
+                                <span class="input-group-text">@company.com</span>
+                            </div>
+
+                            <div class="form-floating my-3">
+                                <input 
+                                type="password" class="form-control"
+                                id="password1"
+                                placeholder="password"
+                                required>
+                                <label for="password1">
+                                    Your Password
+                                </label>
+                            </div>
+
+                            <button class="btn btn-outline-success">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
-            <div class="col text-center">
-                <h2>FAQs</h2>
+            <div class="col">
+                <h2 class="text-center">FAQs <span class="badge bg-secondary mx-2">NEW</span></h2>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item <span class="badge bg-secondary">1</span>
+                                What is Bootstrap?
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dicta, labore porro repellat, earum iusto autem facilis tempore nobis vero non dolor tempora quibusdam aliquam at? Architecto sit deserunt dolor?
                             </div>
                         </div>
                     </div>
@@ -351,18 +381,13 @@
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item <span class="badge bg-secondary">2</span>
+                                Who is Construction Co.?
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptatem ullam deserunt voluptate explicabo laborum quos debitis, perspiciatis modi cum voluptas minima obcaecati sint dolorem eveniet ipsa non error quo?
                             </div>
                         </div>
                     </div>
@@ -370,18 +395,13 @@
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item <span class="badge bg-secondary">3</span>
+                                What is Launch Conf?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem laudantium ullam voluptatem in. Debitis in saepe nihil ratione eos tempore, consectetur, voluptate quas at cumque minima quis recusandae. Praesentium.
                             </div>
                         </div>
                     </div>

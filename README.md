@@ -40,3 +40,5 @@ A project focused in using bootstrap for HTML, CSS and JS
 - Bootstrap compiled CDN (CSS + JS **with Poppers.js** in bundle), linked in HTML link + script tags
 - Font Awesome - icon library, linked in HTML
 
+### Credit to Easy tutorial on Youtube for initial guide and set up
+[Youtube Link](https://youtu.be/v0IgI8vYD_o)

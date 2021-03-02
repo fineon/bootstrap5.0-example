@@ -16,6 +16,7 @@
     }
 };
 
+//setting all rows into columns in mobile layout
 .row{
     @include phone {
         flex-direction: column;
@@ -43,6 +44,10 @@
     background-image: linear-gradient(to right, #a517ba, #5f1782);
     color: white;
     padding-top:5%;
+
+    p:last-child{
+        color: black;
+    }
 
     &__bottom-shape{
         background-image: linear-gradient(to right, #a517ba, #5f1782);
@@ -177,7 +182,6 @@
     }
 
 }
-
 
 .myCarousel{
     //adding this width makes carousel look very small on mobile layout. Could add a media query mixin?
