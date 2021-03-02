@@ -1,3 +1,27 @@
+@mixin phone {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+};
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+};
+
+@mixin desk {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+};
+
+.row{
+    @include phone {
+        flex-direction: column;
+    }
+}
+
 .navbar{
     background-image: linear-gradient(to right, #a517ba, #5f1782);
     &-brand{
@@ -51,18 +75,18 @@
             transform: translateY(50px);
         }
 
-        //adding another small decor to the divider
-        &::after{
-            content: '';
-            background: #7b1798;
-            height: 10px;
-            width: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 40px;
-            display: block;
-            transform: translateY(4px);
-        }
+        //adding another small decor to the divider. It doesn't scale well in mobile layout
+        // &::after{
+        //     content: '';
+        //     background: #7b1798;
+        //     height: 10px;
+        //     width: 50px;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     margin-bottom: 40px;
+        //     display: block;
+        //     transform: translateY(4px);
+        // }
     }
 
     &-img{
@@ -73,7 +97,7 @@
     //chose to name classes for h2 only in services section since parent Bootstrap class selector could be too wide and may cause unwanted inheritence in other styling sections
     &__title{
         padding: 5px;
-        margin-top: 25px;
+        // margin-top: 25px;
         text-transform: capitalize;
     }
 
@@ -159,4 +183,7 @@
     //adding this width makes carousel look very small on mobile layout. Could add a media query mixin?
     width: 50%;
     margin-bottom: 40px;
+    @include phone {
+        width: 100%;
+    }
 }

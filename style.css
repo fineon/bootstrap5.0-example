@@ -1,3 +1,12 @@
+@media screen and (max-width: 320px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .navbar {
   background-image: -webkit-gradient(linear, left top, right top, from(#a517ba), to(#5f1782));
   background-image: linear-gradient(to right, #a517ba, #5f1782);
@@ -51,26 +60,12 @@
           transform: translateY(50px);
 }
 
-.services__heading--withborder::after, .about-us__heading::after, .testimonial__heading::after {
-  content: '';
-  background: #7b1798;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-}
-
 .services-img {
   width: 100%;
 }
 
 .services__title {
   padding: 5px;
-  margin-top: 25px;
   text-transform: capitalize;
 }
 
@@ -145,5 +140,11 @@
 .myCarousel {
   width: 50%;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 320px) {
+  .myCarousel {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

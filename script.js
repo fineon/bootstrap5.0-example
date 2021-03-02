@@ -9,9 +9,7 @@ var toastElList = [].slice.call(document.querySelectorAll('.toast'));
 let toastBtn = document.getElementById('liveToastBtn');
 
 var toastList = toastElList.map(function (toastEl) {
-    console.log(toastEl);
     toastBtn.addEventListener('click', item => {
-        console.log(item);
         return new bootstrap.Toast(toastEl,{autohide: false}).show()
     })
 });
